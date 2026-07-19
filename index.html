@@ -2,7 +2,7 @@
 <meta name="description" content="캠핑장 사장님을 위한 마케팅 자동화, 캠지기. 사진과 메모만 남기면 캠지기가 글을 써서 자동으로 발행합니다. 지금 실제로 운영 중인 캠핑장에 적용된 방식입니다.">
 <meta property="og:title" content="캠지기 — 사진 3장 올리고 잤는데, 아침에 글이 올라와 있었습니다">
 <meta property="og:description" content="캠핑장 사장님을 위한 마케팅 자동화, 캠지기. 사진과 메모만 남기면 캠지기가 글을 써서 자동으로 발행합니다.">
-<meta property="og:image" content="assets/hero-v2.png">
+<meta property="og:image" content="assets/hero-v3.png">
 <meta property="og:type" content="website">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -29,8 +29,8 @@
   }
   .wrap{max-width:960px;margin:0 auto;padding:0 20px}
   header{
-    background:linear-gradient(180deg,rgba(21,19,15,.2),var(--bg) 85%),
-      url('assets/hero-v2.png') center 30%/cover no-repeat;
+    background:linear-gradient(180deg,rgba(21,19,15,0) 0%,rgba(21,19,15,.1) 45%,var(--bg) 94%),
+      url('assets/hero-v3.png') center 38%/cover no-repeat;
     min-height:92vh;
     display:flex;
     align-items:flex-end;
@@ -42,8 +42,9 @@
     font-size:14px;
     font-weight:600;
     letter-spacing:.02em;
-    background:rgba(232,148,74,.12);
-    border:1px solid rgba(232,148,74,.3);
+    background:rgba(21,19,15,.72);
+    backdrop-filter:blur(4px);
+    border:1px solid rgba(232,148,74,.4);
     padding:6px 14px;
     border-radius:999px;
     margin-bottom:20px;
@@ -54,12 +55,14 @@
     line-height:1.25;
     max-width:11.5em;
     letter-spacing:-.01em;
+    text-shadow:0 2px 16px rgba(0,0,0,.35);
   }
   .sub{
     margin-top:18px;
     font-size:clamp(16px,2.4vw,19px);
     color:var(--text-dim);
     max-width:34em;
+    text-shadow:0 2px 12px rgba(0,0,0,.4);
   }
   .cta{
     display:inline-block;
@@ -174,6 +177,18 @@
   }
   .honest b{color:var(--text)}
 
+  .story{
+    background:var(--card);
+    border-left:3px solid var(--amber);
+    border-radius:0 14px 14px 0;
+    padding:24px 26px;
+    font-size:15.5px;
+    font-style:italic;
+    color:var(--text-dim);
+    line-height:1.8;
+  }
+  .story b{color:var(--text);font-style:normal}
+
   footer{
     padding:60px 0 50px;
     text-align:center;
@@ -192,6 +207,13 @@
     <div class="cta-sub">1분이면 신청 완료 · 부담 없이 먼저 설명 들어보실 수 있어요</div>
   </div>
 </header>
+
+<div class="wrap" style="padding-top:56px;padding-bottom:8px;">
+  <div class="story">
+    지난주 화요일 밤, 손님들이 다 돌아가고 나서 잠깐 자리에 앉았습니다. 꺼져가는 모닥불 냄새가 옷에 배어 있었고, 핸드폰엔 낮에 찍어둔 사진 몇 장이 그대로 남아 있었습니다. 그걸 대충 정리해서 폼에 올리고 그대로 잠들었죠.<br><br>
+    다음 날 아침, 커피 물을 올리는데 알림이 울렸습니다. <b>어제 있었던 일이 그대로 한 편의 글이 되어 사이트에 올라와 있었습니다.</b> 이게 캠지기를 만들게 된 이유입니다.
+  </div>
+</div>
 
 <section id="problem">
   <div class="wrap">
