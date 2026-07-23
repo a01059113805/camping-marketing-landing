@@ -62,13 +62,15 @@
 
   /* ---------- hero ---------- */
   header{
-    background:linear-gradient(180deg,rgba(20,15,8,.20) 0%,rgba(20,15,8,.34) 55%,rgba(20,15,8,.68) 100%),
+    background:linear-gradient(180deg,rgba(20,15,8,.34) 0%,rgba(20,15,8,.30) 45%,rgba(20,15,8,.55) 100%),
       url('assets/hero-v3.png') center 40%/cover no-repeat;
     min-height:100vh;
     display:flex;
-    align-items:flex-end;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
   }
-  .hero-inner{padding:0 0 72px;max-width:1000px;margin:0 auto;width:100%;padding-left:22px;padding-right:22px}
+  .hero-inner{padding:96px 22px 72px;max-width:1000px;margin:0 auto;width:100%}
   .eyebrow{
     display:inline-block;
     color:#fff;
@@ -84,19 +86,20 @@
   }
   h1{
     color:#fff;
-    font-size:clamp(30px,5.4vw,50px);
+    font-size:clamp(32px,5.8vw,54px);
     font-weight:800;
     line-height:1.22;
-    max-width:12em;
+    max-width:14em;
+    margin:0 auto;
     letter-spacing:-.02em;
-    text-shadow:0 2px 24px rgba(0,0,0,.4);
+    text-shadow:0 2px 24px rgba(0,0,0,.5);
   }
   .sub{
-    margin-top:18px;
+    margin:18px auto 0;
     font-size:clamp(16px,2.3vw,20px);
-    color:rgba(255,255,255,.9);
+    color:rgba(255,255,255,.92);
     max-width:30em;
-    text-shadow:0 2px 16px rgba(0,0,0,.45);
+    text-shadow:0 2px 16px rgba(0,0,0,.5);
   }
   .cta{
     display:inline-block;
@@ -112,7 +115,7 @@
     transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
   }
   .cta:hover{background:var(--amber-ink);transform:translateY(-2px);box-shadow:0 10px 28px rgba(232,148,74,.4)}
-  .hero-cta-row{margin-top:32px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .hero-cta-row{margin-top:32px;display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
   .cta-sub{font-size:13px;color:rgba(255,255,255,.8)}
 
   /* ---------- sections ---------- */
